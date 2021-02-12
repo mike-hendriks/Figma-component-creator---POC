@@ -1,0 +1,17 @@
+<h2>Input Creator</h2>
+<p>Text: <input id="value" value="Email address"></p>
+<button id="create-input">create-input</button>
+<button id="cancel">Cancel</button>
+<script>
+
+document.getElementById('create-input').onclick = () => {
+  const textbox = document.getElementById('value');
+  const val = textbox.value;
+  parent.postMessage({ pluginMessage: { type: 'create-input', val } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script>

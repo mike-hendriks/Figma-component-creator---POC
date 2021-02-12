@@ -1,0 +1,7 @@
+{
+  "name": "Figma component creator - POC",
+  "id": "941693461322205862",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html"
+}
